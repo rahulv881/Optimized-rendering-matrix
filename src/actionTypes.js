@@ -1,0 +1,1 @@
+export const CHANGE_BOX_TO_GREEN = "CHANGE_BOX_TO_GREEN";

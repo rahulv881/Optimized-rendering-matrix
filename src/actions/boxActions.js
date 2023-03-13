@@ -1,15 +1,12 @@
-import { RESET_BOX, CHANGE_BOX_TO_GREEN } from "../actionTypes/actionTypes";
+import { CHANGE_BOX_TO_GREEN } from "../actionTypes";
 
-const resetBox = () => {
-  return {
-    type: RESET_BOX,
-  };
-};
-
-const changeBoxToGreen = () => {
+const changeBoxToGreen = (index) => {
   return {
     type: CHANGE_BOX_TO_GREEN,
+    payload: {
+        curr: index
+    }
   };
 };
 
-export { resetBox, changeBoxToGreen  };
+export { changeBoxToGreen  };
